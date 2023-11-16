@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebRTC Video Chat</title>
+    <style>
+      video {
+        width: 100%;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WebRTC Video Chat</h1>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <br />
+    <button onclick="start()">Start Call</button>
+    <button onclick="hangUp()">Hang Up</button>
+    <button onclick="startRecording()">Start Recording</button>
+    <button onclick="stopRecording()">Stop Recording</button>
+    <button onclick="downloadRecording()">Download Recording</button>
+    <script src="app.js"></script>
+  </body>
+</html>
